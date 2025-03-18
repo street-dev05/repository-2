@@ -1,4 +1,3 @@
-#include <iostream>
 #include <string>
 #include <bitset>
 using namespace std;
@@ -45,14 +44,15 @@ string decrypt(string encryptedText) {
 }
 
 int main() {
-    string text = "Це приклад тексту для шифрування за допомогою стеганографії.";
+    setlocale(LC_ALL, ""); // РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј Р»РѕРєР°Р»СЊ
+    string text = "Р¦Рµ РїСЂРёРєР»Р°Рґ С‚РµРєСЃС‚Сѓ РґР»СЏ С€РёС„СЂСѓРІР°РЅРЅСЏ Р·Р° РґРѕРїРѕРјРѕРіРѕСЋ СЃС‚РµРіР°РЅРѕРіСЂР°С„С–С—.";
     string phrase = "hello";
 
     string encryptedText = encrypt(text, phrase);
-    cout << "Зашифрований текст: " << encryptedText << endl;
+    cout << "Р—Р°С€РёС„СЂРѕРІР°РЅРёР№ С‚РµРєСЃС‚: " << encryptedText << endl;
 
     string decryptedPhrase = decrypt(encryptedText);
-    cout << "Розшифрована фраза: " << decryptedPhrase << endl;
+    cout << "Р РѕР·С€РёС„СЂРѕРІР°РЅР° С„СЂР°Р·Р°: " << decryptedPhrase << endl;
 
     return 0;
 }
