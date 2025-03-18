@@ -32,17 +32,17 @@ City findCapital(vector<City>& cities) {
 
 int main() {
     int N;
-    cout << "Ââåä³òü ê³ëüê³ñòü ì³ñò: ";
+    cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ ÐºÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŒ Ð¼Ñ–ÑÑ‚: ";
     cin >> N;
 
     vector<City> cities(N);
-    cout << "Ââåä³òü êîîðäèíàòè ì³ñò (x y):" << endl;
+    cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ð¸ Ð¼Ñ–ÑÑ‚ (x y):" << endl;
     for (int i = 0; i < N; ++i) {
         cin >> cities[i].x >> cities[i].y;
     }
 
     City capital = findCapital(cities);
-    cout << "Êîîðäèíàòè ñòîëèö³: (" << capital.x << ", " << capital.y << ")" << endl;
+    cout << "ÐšÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ð¸ ÑÑ‚Ð¾Ð»Ð¸Ñ†Ñ–: (" << capital.x << ", " << capital.y << ")" << endl;
 
     return 0;
 }
